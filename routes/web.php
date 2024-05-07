@@ -4,6 +4,7 @@ use App\Http\Livewire\CheckoutPage;
 use App\Http\Livewire\CheckoutSuccessPage;
 use App\Http\Livewire\CollectionPage;
 use App\Http\Livewire\Home;
+use App\Http\Livewire\KKKPage;
 use App\Http\Livewire\ProductPage;
 use App\Http\Livewire\SearchPage;
 use Illuminate\Support\Facades\Route;

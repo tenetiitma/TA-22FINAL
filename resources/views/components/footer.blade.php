@@ -3,8 +3,8 @@
 
         <p class="max-w-sm mt-4 text-gray-700">
             <ul class="max-w-sm mt-4 text-gray-500 font-light text-sm text-center mx-auto">
-                <li>Kasutajatingimused</li>
                 <li>KKK</li>
+                <li>Kasutajatingimused</li>
                 <li>Mõõdutabel</li>
                 <li>Müügitingimused</li>
                 <li>Tagastamistingimused</li>

@@ -5,8 +5,6 @@
                href="{{ url('/') }}">
                 <span class="sr-only">Home</span>
                 <x-brand.wool />
-                <!-- <img src="/logotrans.png" class="h-10 w-10" alt="logo"> -->
-                <!-- <x-brand.logo class="w-auto h-6 text-indigo-600" /> -->
             </a>
 
             <nav class="hidden lg:gap-4 lg:flex lg:ml-8">
