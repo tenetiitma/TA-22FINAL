@@ -25,7 +25,7 @@
                 ])
                         type="button"
                         wire:click.prevent="$set('paymentType', 'cash-in-hand')">
-                    Sularahas
+                    Sularaha
                 </button>
             </div>
 
@@ -37,7 +37,7 @@
             @if ($paymentType == 'cash-in-hand')
                 <form wire:submit.prevent="checkout">
                     <div class="p-4 text-sm text-center text-blue-700 rounded-lg bg-blue-50">
-                        Tasumine sularahas, kaardi andmeid sisestama ei pea.
+                        Tasumine sularahas koha peal
                     </div>
 
                     <button class="px-5 py-3 mt-4 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-500"
@@ -45,7 +45,7 @@
                             wire:key="payment_submit_btn">
                         <span wire:loading.remove.delay
                               wire:target="checkout">
-                            Maksa
+                            Kinnitan tellimuse
                         </span>
                         <span wire:loading.delay
                               wire:target="checkout">

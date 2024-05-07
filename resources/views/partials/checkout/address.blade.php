@@ -135,7 +135,7 @@
                         <div class="space-y-4">
                             <div>
                                 <dt class="font-medium">
-                                    Nimi
+                                    Ees- ja perenimi
                                 </dt>
 
                                 <dd class="mt-0.5">
@@ -146,7 +146,7 @@
                             @if ($this->{$type}->company_name)
                                 <div>
                                     <dt class="font-medium">
-                                        Ettevõte
+                                        Ettevõtte nimi
                                     </dt>
 
                                     <dd class="mt-0.5">
@@ -214,7 +214,7 @@
                             wire:target="saveAddress">
                         <span wire:loading.remove
                               wire:target="saveAddress">
-                            Save Address
+                            Salvesta aadress
                         </span>
 
                         <span wire:loading

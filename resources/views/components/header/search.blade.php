@@ -7,7 +7,7 @@
            value="{{ $this->term }}" />
 
     <button class="absolute p-2 text-gray-600 transition -translate-y-1/2 rounded-md left-1 top-1/2 hover:bg-gray-50">
-        <span class="sr-only">Submit Search</span>
+        <span class="sr-only">Otsi</span>
 
         <svg xmlns="http://www.w3.org/2000/svg"
              class="w-4 h-4"
