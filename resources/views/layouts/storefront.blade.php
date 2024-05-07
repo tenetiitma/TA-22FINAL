@@ -10,7 +10,7 @@
     <title>WÖÖL</title>
     <meta
         name="description"
-        content="Example of an ecommerce storefront built with Lunar."
+        content="Saaremaiselt mÖnus käsitöökaup."
     >
     <link
         href="{{ asset('css/app.css') }}"

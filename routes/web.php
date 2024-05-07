@@ -5,8 +5,13 @@ use App\Http\Livewire\CheckoutSuccessPage;
 use App\Http\Livewire\CollectionPage;
 use App\Http\Livewire\Home;
 use App\Http\Livewire\KKKPage;
+use App\Http\Livewire\MeasurementPage;
+use App\Http\Livewire\PrivacyPolicyPage;
 use App\Http\Livewire\ProductPage;
+use App\Http\Livewire\ReturnPolicyPage;
+use App\Http\Livewire\SalesTermsPage;
 use App\Http\Livewire\SearchPage;
+use App\Http\Livewire\TermsPage;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +26,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', Home::class);
+
+Route::get('/kkk', KKKPage::class)->name('kkk.view');
+Route::get('/measurement', MeasurementPage::class)->name('measurement.view');
+Route::get('/return-policy', ReturnPolicyPage::class)->name('returnpolicy.view');
+Route::get('/privacy-policy', PrivacyPolicyPage::class)->name('privacypolicy.view');
+Route::get('/tos', TermsPage::class)->name('terms.view');
+Route::get('/sales-terms', SalesTermsPage::class)->name('salesterms.view');
 
 Route::get('/collections/{slug}', CollectionPage::class)->name('collection.view');
 
