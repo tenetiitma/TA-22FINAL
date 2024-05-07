@@ -37,7 +37,7 @@
             >
                 <span class="sr-only">Home</span>
 
-                <x-brand.logo class="w-auto h-6 text-indigo-600" />
+                <x-brand.wool />
             </a>
         </div>
     </header>

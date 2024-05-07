@@ -12,7 +12,7 @@
                 </span>
 
                 <span class="block mt-1 text-blue-500">
-                    Makse õnnetus!
+                    Suur tänu tellimuse eest!
                 </span>
             </h1>
 
