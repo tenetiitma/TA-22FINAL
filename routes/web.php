@@ -29,10 +29,10 @@ Route::get('/', Home::class);
 
 Route::get('/kkk', KKKPage::class)->name('kkk.view');
 Route::get('/measurement', MeasurementPage::class)->name('measurement.view');
+Route::get('/sales-terms', SalesTermsPage::class)->name('salesterms.view');
 Route::get('/return-policy', ReturnPolicyPage::class)->name('returnpolicy.view');
 Route::get('/privacy-policy', PrivacyPolicyPage::class)->name('privacypolicy.view');
-Route::get('/tos', TermsPage::class)->name('terms.view');
-Route::get('/sales-terms', SalesTermsPage::class)->name('salesterms.view');
+
 
 Route::get('/collections/{slug}', CollectionPage::class)->name('collection.view');
 
