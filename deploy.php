@@ -5,7 +5,7 @@ namespace Deployer;
 require 'recipe/laravel.php';
 
 // Project name
-set('application', 'finalproject');
+set('application', 'finalProject');
 set('remote_user', 'virt118412'); //virt...
 set('http_user', 'virt118412');
 set('keep_releases', 2);
