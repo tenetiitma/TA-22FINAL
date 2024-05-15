@@ -15,7 +15,7 @@
         </div>
 
         <button type="submit"
-                class="w-full px-6 py-4 text-sm font-medium text-center text-white bg-indigo-600 rounded-lg hover:bg-indigo-700"
+                class="w-full px-6 py-4 text-sm font-medium text-center text-white bg-slate-600 rounded-lg hover:bg-indigo-700"
                 wire:click.prevent="addToCart">
             Lisa ostukorvi
         </button>

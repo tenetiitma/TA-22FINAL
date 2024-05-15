@@ -13,6 +13,8 @@
           rel="stylesheet">
 
     <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0.0/dist/tailwind.min.css" rel="stylesheet">
+
     <style>
         /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
         html {
@@ -408,7 +410,7 @@
 
 <body class="antialiased">
     <div
-         class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+         class="relative flex items-top justify-center min-h-screen bg--100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
         @if (Route::has('login'))
             <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                 @auth
