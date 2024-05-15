@@ -1,7 +1,7 @@
 <section class="bg-gray-50">
     <div class="max-w-screen-xl px-4 py-32 mx-auto sm:px-6 lg:px-8">
         <div class="max-w-screen-xl px-8 text-justify">
-            <h1 class="text-3xl mx-auto text-center font-medium sm:text-5xl">
+            <h1 class="text-3xl mx-auto mb-8 text-center font-medium sm:text-5xl">
                 MÜÜGITINGIMUSED
             </h1>
             <br><br>
@@ -37,11 +37,9 @@ Veebipood vastab tarbija esitatud kaebusele kirjalikult või kirjalikku taasesi
                 <br><br>
                 <h1 class="text-xl font-semibold mb-2  sm:text-2xl">Otseturustus ja isikuandmete töötlemine</h1>
                 <p class="font-light">Veebipood kasutab ostja poolt sisestatud isikuandmeid ainult tellimuse töötlemiseks ning kauba ostjale saatmiseks. Veebipood edastab isikuandmeid veoteenust pakkuvale ettevõtetele selleks, et kohale toimetada kaupa.<br><br> Veebipood saadab ostjale uudiskirju ning pakkumisi ostja e-maili aadressile ainult juhul, kui ostja on selleks avaldanud soovi sisestades veebilehel e-kirja aadressi ning andnud teada oma soovist otsepostituse teadete saamiseks.<br><br>Ostjal on igal ajal võimalik loobuda e-postile saadetavatest pakkumistest ja uudiskirjadest andes sellest meile teada e-kirja teel või järgides pakkumisi sisaldava e-kirjas toodud juhiseid. 
-                <br><br>
+                <br><br><br>
                 <h1 class="text-xl font-semibold mb-2  sm:text-2xl">Vaidluse lahendamine</h1>
-                <p class="font-light">Kui ostjal on Veebipoe osas pretensioone, tuleb need saata e-kirja aadressile <span class="font-semibold">woolkudumid@gmail.com</span> või helistada telefonil: <span class="font-semibold">+372 5101204</span>.<br>
-
-Kui ostja ja Veebipood ei suuda lahendada vaidlust kokkuleppe teel, siis on ostjal võimalik pöörduda Tarbijavaidluste komisjoni poole.</p>
+                <p class="font-light">Kui ostjal on Veebipoe osas pretensioone, tuleb need saata e-kirja aadressile <span class="font-semibold">woolkudumid@gmail.com</span> või helistada telefonil: <span class="font-semibold">+372 5101204</span>.<br>Kui ostja ja Veebipood ei suuda lahendada vaidlust kokkuleppe teel, siis on ostjal võimalik pöörduda Tarbijavaidluste komisjoni poole.</p>
             </div>
 
 
