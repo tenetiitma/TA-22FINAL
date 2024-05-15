@@ -1,6 +1,6 @@
-<section class="bg-gray-50">
+<section class="family">
     <div class="max-w-screen-xl px-4 py-32 mx-auto sm:px-6 lg:px-8">
-        <div class="max-w-xl mx-auto text-center">
+        <div class="max-w-xl mx-auto family-box rounded-lg p-6 text-center">
             <h1 class="text-3xl font-medium sm:text-5xl">
                 Tere tulemast
 
