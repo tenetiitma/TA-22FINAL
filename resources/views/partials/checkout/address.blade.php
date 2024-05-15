@@ -207,7 +207,7 @@
 
             @if ($step == $currentStep)
                 <div class="mt-6 text-right">
-                    <button class="px-5 py-3 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-500"
+                    <button class="px-5 py-3 text-sm font-medium text-white bg-stone-600 rounded-lg hover:bg-stone-500"
                             type="submit"
                             wire:key="submit_btn"
                             wire:loading.attr="disabled"

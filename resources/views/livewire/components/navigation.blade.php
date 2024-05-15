@@ -9,7 +9,7 @@
 
             <nav class="hidden lg:gap-4 lg:flex lg:ml-8">
                 @foreach ($this->collections as $collection)
-                    <a class="text-sm font-medium transition hover:opacity-75"
+                    <a class="text-sm font-light uppercase transition hover:opacity-50"
                        href="{{ route('collection.view', $collection->defaultUrl->slug) }}">
                         {{ $collection->translateAttribute('name') }}
                     </a>

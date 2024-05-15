@@ -125,13 +125,13 @@
 
         @if ($this->cart)
             <div class="mt-4 space-y-4 text-center">
-                <button class="block w-full p-3 text-sm font-medium text-blue-800 border border-blue-600 rounded-lg hover:ring-1 hover:ring-blue-600"
+                <button class="block w-full p-3 text-sm font-medium text-stone-800 border border-stone-600 rounded-lg hover:ring-1 hover:ring-stone-600"
                         type="button"
                         wire:click="updateLines">
                     Uuenda ostukorvi
                 </button>
 
-                <a class="block w-full p-3 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-500"
+                <a class="block w-full p-3 text-sm font-medium text-center text-white bg-stone-600 rounded-lg hover:bg-stone-700"
                    href="{{ route('checkout.view') }}">
                     Maksma
                 </a>
