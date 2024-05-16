@@ -1,3 +1,3 @@
 <span {{ $attributes }}>
-    {{ $price?->price->formatted() }} (ilma KM-ta)
+    {{ $price?->price->formatted() }}
 </span>

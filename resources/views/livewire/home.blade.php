@@ -19,4 +19,5 @@
             </div>
         </section>
     @endif
+    <x-aboutus-banner />
 </div>
