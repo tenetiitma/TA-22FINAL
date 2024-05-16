@@ -6,7 +6,7 @@
             </h1>
 
             <p class="mt-4 font-light sm:leading-relaxed sm:text-xl">
-                <span class="font-semibold">WÖÖL</span> on väike pereettevõte Kuressaares, mis on pea 25 aastat müünud oma kudumeid Kuressaare Turul. 
+                <span class="font-semibold">WÖÖL</span> on väike pereettevõte Kuressaares, mis on üle 25 aasta müünud oma kudumeid Kuressaare Turul. 
                 <br><br>Kõik tooted on valmistatud käsitööna Saaremaal 🩷
             </p>
 

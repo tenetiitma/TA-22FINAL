@@ -568,6 +568,9 @@ select {
 .right-0 {
     right: 0;
 }
+.left-0 {
+    left: 0;
+}
 .left-1 {
     left: 0.25rem;
 }
@@ -713,11 +716,23 @@ select {
 .hidden {
     display: none;
 }
+.h-auto {
+    height: auto;
+}
+.h-full {
+    height: 100%;
+}
 .h-5 {
     height: 1.25rem;
 }
 .h-8 {
     height: 2rem;
+}
+.h-12 {
+    height: 3rem;
+}
+.h-14 {
+    height: 3.5rem;
 }
 .h-16 {
     height: 4rem;
@@ -749,6 +764,9 @@ select {
 .w-8 {
     width: 2rem;
 }
+.w-20 {
+    width: 5rem;
+}
 .w-auto {
     width: auto;
 }
@@ -757,6 +775,12 @@ select {
 }
 .w-full {
     width: 100%;
+}
+.w-12 {
+    width: 3rem;
+}
+.w-14 {
+    width: 3.5rem;
 }
 .w-16 {
     width: 4rem;
@@ -1064,7 +1088,7 @@ select {
             rgba(255, 255, 255, 0.7),
             rgba(255, 255, 255, 0.7)
         ),
-        url("images/family.jpg");
+        url("../images/family.jpg");
     background-position-y: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1088,6 +1112,11 @@ select {
     to {
         opacity: 1;
     }
+}
+
+.fade-container {
+    position: relative;
+    overflow: hidden;
 }
 
 .opacity-100 {
@@ -1115,7 +1144,7 @@ select {
 }
 
 .text-stone-600 {
-    color: rgb(87 83 78);
+    color: rgb(87, 83, 78);
 }
 
 .border-stone-600 {
@@ -1808,6 +1837,31 @@ select {
     }
 }
 @media (min-width: 1024px) {
+    .lg\:text-justify {
+        text-align: justify;
+    }
+    .lg\:left-fade:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), #f9fafb);
+    }
+
+    .lg\:right-fade:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 100%;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), #f9fafb);
+    }
+    .lg\:text-left {
+        text-align: left;
+    }
     .lg\:sticky {
         position: sticky;
     }
@@ -1823,6 +1877,12 @@ select {
     .lg\:order-2 {
         order: 2;
     }
+    .lg\:order-3 {
+        order: 3;
+    }
+    .lg\:order-4 {
+        order: 4;
+    }
     .lg\:col-span-2 {
         grid-column: span 2 / span 2;
     }
@@ -1831,6 +1891,9 @@ select {
     }
     .lg\:ml-8 {
         margin-left: 2rem;
+    }
+    .lg\:mt-6 {
+        margin-top: 1.5rem;
     }
     .lg\:mr-0 {
         margin-right: 0;
