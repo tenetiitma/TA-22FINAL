@@ -548,6 +548,7 @@ select {
     white-space: nowrap;
     width: 1px;
 }
+
 .fixed {
     position: fixed;
 }
@@ -818,6 +819,17 @@ select {
 .animate-spin {
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
+}
+
+.allura-regular {
+    font-family: "Allura", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-5xl {
+    font-size: 3rem;
+    line-height: 1;
 }
 
 .list-decimal {

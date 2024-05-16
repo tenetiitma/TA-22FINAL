@@ -25,6 +25,8 @@
         href="{{ asset('favicon.svg') }}"
     >
     @livewireStyles
+
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 </head>
 
 <body class="antialiased text-gray-900">
