@@ -30,7 +30,7 @@
                             <span>WÖÖL</span>-il on tähendusrikas osa täpitähtedel, kuna kudumid saavad alguse
                             just Saaremaa käsitöömeistrilt <span class="font-semibold">Piret</span>, kellel kogemust rohkem kui 25 aastat.
                         </p>
-                        <p class="text-lg mb-2 leading-relaxed text-center font-bold lg:text-justify">Kudumites kasutatakse vaid naturaalset toormaterjali ning peetakse lugu jätkusuutlikusest. Wööli tooted on valmistatud lamba-ja meriinovillast, mis on 100% naturaalsed.</p>
+                        <p class="text-lg mb-2 leading-relaxed text-center font-bold lg:text-justify">Kudumites kasutatakse vaid naturaalset toormaterjali ning peetakse lugu jätkusuutlikusest. Wööli tooted on valmistatud lamba- ja meriinovillast, mis on 100% naturaalsed.</p>
                     </div>
                     <div class="relative">
                         <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-white mix-blend-multiply"></div>
