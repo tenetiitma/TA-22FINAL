@@ -815,6 +815,19 @@ select {
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
 }
+
+.list-decimal {
+    list-style-type: decimal;
+}
+
+.list-disc {
+    list-style-type: disc;
+}
+
+.list-outside {
+    list-style-position: outside;
+}
+
 .cursor-pointer {
     cursor: pointer;
 }
@@ -1311,6 +1324,11 @@ select {
 .font-bold {
     font-weight: 700;
 }
+
+.italic {
+    font-style: italic;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
