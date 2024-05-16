@@ -827,6 +827,11 @@ select {
     font-style: normal;
 }
 
+.text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+}
+
 .list-decimal {
     list-style-type: decimal;
 }
