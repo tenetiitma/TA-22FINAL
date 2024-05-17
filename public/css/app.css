@@ -994,6 +994,12 @@ select {
 .border-b {
     border-bottom-width: 1px;
 }
+.order-1 {
+    order: 1;
+}
+.order-2 {
+    order: 2;
+}
 .border-none {
     border-style: none;
 }
@@ -1727,6 +1733,19 @@ select {
     }
     .sm\:relative {
         position: relative;
+    }
+    .sm\:order-1 {
+        order: 1;
+    }
+
+    .sm\:order-2 {
+        order: 2;
+    }
+    .sm\:order-3 {
+        order: 3;
+    }
+    .sm\:order-4 {
+        order: 4;
     }
     .sm\:right-0 {
         right: 0;
