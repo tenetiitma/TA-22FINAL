@@ -109,7 +109,7 @@
 
                 <dl class="flex flex-wrap pt-4 mt-6 text-sm border-t border-gray-100">
                     <dt class="w-1/2 font-medium">
-                        Summa (ilma KM-ta)
+                        Summa
                     </dt>
 
                     <dd class="w-1/2 text-right">
