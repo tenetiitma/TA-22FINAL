@@ -125,6 +125,11 @@ class ProductPage extends Component
         return $this->images->first();
     }
 
+    public function openModal($imageUrl) {
+        $this->dispatchBrowserEvent('open-modal');
+        $this->emit('modalOpened', $imageUrl);
+    }
+
     /**
      * {@inheritDoc}
      */
