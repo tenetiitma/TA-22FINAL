@@ -37,7 +37,7 @@
                     {{ $this->variant->sku }}
                 </p> -->
 
-                <article class="mt-4 text-gray-700">
+                <article class="mt-4 text-slate-700">
                     {!! $this->product->translateAttribute('description') !!}
                 </article>
 

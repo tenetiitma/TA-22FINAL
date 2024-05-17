@@ -7,7 +7,7 @@
 
     @if ($this->randomCollection)
         <section class="text-stone-600">
-            <h1 class="text-3xl">UUED KUDUMID KATEGOORIAS</h1>
+            <h1 class="text-3xl">UUED TOOTED KATEGOORIAS</h1>
             <h2 class="text-3xl font-bold">
                 {{ $this->randomCollection->translateAttribute('name') }}
             </h2>

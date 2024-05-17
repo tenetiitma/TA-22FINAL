@@ -9,7 +9,6 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 
 
 
@@ -406,12 +405,6 @@
         body {
             font-family: 'Nunito', sans-serif;
         }
-
-        .allura-regular {
-  font-family: "Allura", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
     </style>
 </head>
 

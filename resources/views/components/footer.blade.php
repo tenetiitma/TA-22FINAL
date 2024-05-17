@@ -3,7 +3,6 @@
         <p class="max-w-sm mt-4 text-gray-700">
         <ul class="max-w-sm mt-4 text-gray-500 font-light text-sm text-center mx-auto">
             <li><a href="/kkk">KKK</a></li>
-            <li><a href="/measurement">Mõõdutabel</a></li>
             <li><a href="/sales-terms">Müügitingimused</a></li>
             <li><a href="/return-policy">Tagastamistingimused</a></li>
             <li><a href="/privacy-policy">Privaatsuspoliitika</a></li>
