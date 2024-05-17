@@ -18,9 +18,8 @@
                                     <p class="text-sm font-medium max-w-[35ch]">
                                         {{ $line->purchasable->getDescription() }}
                                     </p>
-
                                     <span class="block mt-1 text-xs text-gray-500">
-                                        {{ $line->quantity }} x {{ $line->subTotal->formatted() }}
+                                        {{ $line->quantity }} x {{ $line->subTotal->formatted() }} / {{ $line->purchasable->getOption() }}
                                     </span>
                                 </div>
                             </div>
@@ -55,7 +54,7 @@
                         @foreach ($cart->taxBreakdown->amounts as $tax)
                             <div class="flex flex-wrap py-4">
                                 <dt class="w-1/2 font-medium">
-                                    {{ $tax->description }}
+                                    {{ $tax->description }} (22%)
                                 </dt>
 
                                 <dd class="w-1/2 text-right">
