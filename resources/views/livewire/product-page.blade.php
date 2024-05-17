@@ -3,22 +3,25 @@
         <div class="grid items-start grid-cols-1 gap-8 md:grid-cols-2">
             <div class="grid grid-cols-2 gap-4 md:grid-cols-1">
                 @if ($this->image)
-                    <div class="aspect-w-1 aspect-h-1">
-                        <img class="object-cover rounded-xl"
-                             src="{{ $this->image->getUrl('large') }}"
-                             alt="{{ $this->product->translateAttribute('name') }}" />
-                    </div>
+                    <a href="{{ $this->image->getUrl() }}" target="_blank" rel="noopener noreferrer">
+                        <div class="aspect-w-1 aspect-h-1">
+                            <img class="object-cover rounded-xl"
+                                 src="{{ $this->image->getUrl('large') }}"
+                                 alt="{{ $this->product->translateAttribute('name') }}" />
+                        </div>
+                    </a>
                 @endif
 
                 <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
                     @foreach ($this->images as $image)
-                        <div class="aspect-w-1 aspect-h-1"
-                             wire:key="image_{{ $image->id }}">
-                            <img loading="lazy"
-                                 class="object-cover rounded-xl"
-                                 src="{{ $image->getUrl('small') }}"
-                                 alt="{{ $this->product->translateAttribute('name') }}" />
-                        </div>
+                        <a href="{{ $image->getUrl() }}" target="_blank" rel="noopener noreferrer">
+                            <div class="aspect-w-1 aspect-h-1" wire:key="image_{{ $image->id }}">
+                                <img loading="lazy"
+                                     class="object-cover rounded-xl"
+                                     src="{{ $image->getUrl('small') }}"
+                                     alt="{{ $this->product->translateAttribute('name') }}" />
+                            </div>
+                        </a>
                     @endforeach
                 </div>
             </div>

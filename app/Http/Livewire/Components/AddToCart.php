@@ -43,6 +43,8 @@ class AddToCart extends Component
 
         CartSession::manager()->add($this->purchasable, $this->quantity);
         $this->emit('add-to-cart');
+
+        session()->flash('message', 'Toode lisatud ostukorvi!');
     }
 
     public function render()
