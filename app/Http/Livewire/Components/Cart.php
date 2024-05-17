@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Components;
 
 use Livewire\Component;
 use Lunar\Facades\CartSession;
+use Lunar\Facades\Pricing;
 
 class Cart extends Component
 {
@@ -89,6 +90,10 @@ class Cart extends Component
     public function mapLines()
     {
         $this->lines = $this->cartLines->map(function ($line) {
+            // Get the price with tax 22%
+            $price = Pricing::for($line->purchasable)->get()->matched;
+            $priceWithTax = $price ? ($price->price->value / 100) * 1.22 : 0;
+
             return [
                 'id' => $line->id,
                 'identifier' => $line->purchasable->getIdentifier(),
@@ -99,6 +104,7 @@ class Cart extends Component
                 'options' => $line->purchasable->getOptions()->implode(' / '),
                 'sub_total' => $line->subTotal->formatted(),
                 'unit_price' => $line->unitPrice->formatted(),
+                'price_with_tax' => number_format($priceWithTax, 2),
             ];
         })->toArray();
     }
@@ -111,6 +117,20 @@ class Cart extends Component
 
     public function render()
     {
-        return view('livewire.components.cart');
+        return view('livewire.components.cart', [
+            'subTotalWithTax' => $this->calculateSubtotalWithTax(),
+        ]);
     }
+
+    protected function calculateSubtotalWithTax()
+{
+    return $this->cartLines->sum(function ($line) {
+        // Calculate the price with tax for each line
+        $price = Pricing::for($line->purchasable)->get()->matched;
+        $priceWithTax = $price ? ($price->price->value / 100) * 1.22 : 0;
+
+        // Calculate the subtotal with tax for each line
+        return $priceWithTax * $line->quantity;
+    });
+}
 }

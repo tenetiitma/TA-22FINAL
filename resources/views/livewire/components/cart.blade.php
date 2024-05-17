@@ -59,7 +59,7 @@
                                             </p>
 
                                             <span class="block mt-1 text-xs text-gray-500">
-                                                {{ $line['identifier'] }} / {{ $line['options'] }}
+                                                {{ $line['options'] }}
                                             </span>
 
                                             <div class="flex items-center mt-2">
@@ -68,7 +68,7 @@
                                                        wire:model="lines.{{ $index }}.quantity" />
 
                                                 <p class="ml-2 text-xs">
-                                                    x {{ $line['unit_price'] }}
+                                                    x {{ $line['price_with_tax'] }}
                                                 </p>
 
                                                 <button class="p-2 ml-auto text-gray-600 transition-colors rounded-lg hover:bg-gray-100 hover:text-gray-700"
@@ -109,11 +109,11 @@
 
                 <dl class="flex flex-wrap pt-4 mt-6 text-sm border-t border-gray-100">
                     <dt class="w-1/2 font-medium">
-                        Summa
+                        Summa (ilma KM-ta)
                     </dt>
 
                     <dd class="w-1/2 text-right">
-                        {{ $this->cart->subTotal->formatted() }}
+                        {{ number_format($subTotalWithTax, 2) }}
                     </dd>
                 </dl>
             @else

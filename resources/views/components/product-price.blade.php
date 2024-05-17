@@ -1,3 +1,3 @@
 <span {{ $attributes }}>
-    {{ $price?->price->formatted() }}
+    {{ number_format($priceWithTax, 2) }}€
 </span>

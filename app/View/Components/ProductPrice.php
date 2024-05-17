@@ -10,7 +10,7 @@ use Lunar\Models\ProductVariant;
 class ProductPrice extends Component
 {
     public ?Price $price = null;
-
+    public float $priceWithTax;
     public ?ProductVariant $variant = null;
 
     /**
@@ -23,6 +23,10 @@ class ProductPrice extends Component
         $this->price = Pricing::for(
             $variant ?: $product->variants->first()
         )->get()->matched;
+
+        // Calculating the price to include the tax
+        $priceValue = $this->price ? $this->price->price->value : 0;
+        $this->priceWithTax = ($priceValue / 100) * 1.22;
     }
 
     /**
@@ -32,6 +36,8 @@ class ProductPrice extends Component
      */
     public function render()
     {
-        return view('components.product-price');
+        return view('components.product-price', [
+            'priceWithTax' => $this->priceWithTax,
+        ]);
     }
 }
