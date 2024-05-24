@@ -14,8 +14,12 @@ class Navigation extends Component
      * @var string
      */
     public $term = null;
+
+    /** WOMEN */
     public $naisedCollection;
+    /** MEN */
     public $mehedCollection;
+    /** KIDS */
     public $lapsedCollection;
 
     /**
