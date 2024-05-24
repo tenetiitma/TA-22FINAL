@@ -11,9 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
 
-
     <!-- Styles -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0.0/dist/tailwind.min.css" rel="stylesheet"> -->
 
     <style>
         /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

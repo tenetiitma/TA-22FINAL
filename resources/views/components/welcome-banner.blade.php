@@ -1,7 +1,7 @@
-<section class="family">
+<!-- <section>
     <div class="max-w-screen-xl px-4 py-32 mx-auto sm:px-6 lg:px-8">
         <div class="max-w-xl mx-auto family-box rounded-lg p-6 text-stone-600 text-center">
-            <h1 class="text-3xl allura-regular font-medium sm:text-5xl">
+            <h1 class="text-3xl font-medium sm:text-5xl" style="font-family: allura">
                 Hoiame traditsioone ja kehad soojas!
             </h1>
 
@@ -12,4 +12,4 @@
 
         </div>
     </div>
-</section>
+</section> -->

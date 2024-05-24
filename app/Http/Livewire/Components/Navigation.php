@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Components;
 
+use Illuminate\Support\Facades\DB;
 use Livewire\Component;
 use Lunar\Models\Collection;
 
@@ -13,6 +14,9 @@ class Navigation extends Component
      * @var string
      */
     public $term = null;
+    public $naisedCollection;
+    public $mehedCollection;
+    public $lapsedCollection;
 
     /**
      * {@inheritDoc}
@@ -31,8 +35,19 @@ class Navigation extends Component
         return Collection::with(['defaultUrl'])->get()->toTree();
     }
 
+    public function mount()
+    {
+        $this->naisedCollection = Collection::where(DB::raw("JSON_EXTRACT(attribute_data, '$.name.value.en')"), 'Naised')->first();
+        $this->mehedCollection = Collection::where(DB::raw("JSON_EXTRACT(attribute_data, '$.name.value.en')"), 'Mehed')->first();
+        $this->lapsedCollection = Collection::where(DB::raw("JSON_EXTRACT(attribute_data, '$.name.value.en')"), 'Lapsed')->first();
+    }
+
     public function render()
     {
-        return view('livewire.components.navigation');
+        return view('livewire.components.navigation', [
+            'naisedCollection' => $this->naisedCollection,
+            'mehedCollection' => $this->mehedCollection,
+            'lapsedCollection' => $this->lapsedCollection,
+        ]);
     }
 }

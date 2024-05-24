@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.family {
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.7)
+        ),
+        url("../images/family.jpg");
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.backgr-fade {
+    background: linear-gradient(
+        to right,
+        rgba(249, 250, 251, 0),
+        rgb(243, 244, 246) 50%,
+        rgba(249, 250, 251, 0)
+    );
+}
+
+.family-box {
+    background-color: rgba(243, 244, 246, 0.7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-container {
+    position: relative;
+    overflow: hidden;
+}
