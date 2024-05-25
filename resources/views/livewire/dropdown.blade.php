@@ -7,7 +7,7 @@
         <!-- Dropdown menu items -->
         <a href="/collections/naiste-kampsunid" class="block px-4 py-2 hover:bg-gray-100">Naiste kampsunid</a>
         <a href="/collections/naiste-sallid" class="block px-4 py-2  hover:bg-gray-100">Naiste sallid</a>
-        <a href="/collections/naiste-mutsid" class="block px-4 py-2 hover:bg-gray-100">Naiste mütsid</a>
+        <a href="/collections/naiste-peapaelad" class="block px-4 py-2 hover:bg-gray-100">Naiste peapaelad</a>
     </div>
     @endif
     @if($mehedCollection)
