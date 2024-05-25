@@ -18,6 +18,8 @@
     <div x-cloak class="absolute z-50 left-0 mt-2 w-48 bg-white border border-gray-100 py-2 rounded-lg shadow-lg text-stone-600 font-light text-sm" x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95">
         <!-- Dropdown menu items -->
         <a href="/collections/meeste-kampsunid" class="block px-4 py-2 hover:bg-gray-200">Meeste kampsunid</a>
+        <a href="/collections/meeste-mutsid" class="block px-4 py-2 hover:bg-gray-200">Meeste mütsid</a>
+        <a href="/collections/meeste-sallid" class="block px-4 py-2 hover:bg-gray-200">Meeste sallid</a>
     </div>
     @endif
     @if($lapsedCollection)
