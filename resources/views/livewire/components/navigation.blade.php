@@ -5,32 +5,10 @@
                 <span class="sr-only">Home</span>
                 <x-brand.wool />
             </a>
-
             <nav class="hidden lg:gap-4 lg:flex lg:ml-8">
-                <!-- @foreach ($this->collections as $collection)
-                    <a class="text-sm text-stone-600 uppercase transition hover:opacity-50"
-                       href="{{ route('collection.view', $collection->defaultUrl->slug) }}">
-                        {{ $collection->translateAttribute('name') }}
-                    </a>
-                @endforeach -->
-
-                
                 @livewire('dropdown', ['naisedCollection' => $naisedCollection])
                 @livewire('dropdown', ['mehedCollection' => $mehedCollection])
                 @livewire('dropdown', ['lapsedCollection' => $lapsedCollection])
-
-
-
-                <!-- @if($mehedCollection)
-                <a href="{{ route('collection.view', $mehedCollection->defaultUrl->slug) }}" class="text-sm text-stone-600 uppercase transition hover:opacity-50">
-                    {{ $mehedCollection->translateAttribute('name') }}
-                </a>
-                @endif
-                @if($mehedCollection)
-                <a href="{{ route('collection.view', $lapsedCollection->defaultUrl->slug) }}" class="text-sm text-stone-600 uppercase transition hover:opacity-50">
-                    {{ $lapsedCollection->translateAttribute('name') }}
-                </a>
-                @endif -->
             </nav>
         </div>
 

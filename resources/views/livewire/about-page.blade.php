@@ -12,7 +12,7 @@
                             võimalik panna kokku kudum vastavalt enda erisoovidele ja nägemusele.</p>
                         <p class="text-lg mb-6 leading-relaxed text-center lg:text-justify">Toodete valikust leiab erinevaid kudumeid ja samuti aksessuaare
                             nagu mütsid, sallid ning peapaelad.</p>
-                        <p class="text-lg mb-2 leading-relaxed text-center font-bold lg:text-justify">Kudumid on inspireeritud erinevatest loodusvärvidest ning kaunitest Eesti paikadest. </p>
+                        <p class="text-lg mb-2 leading-relaxed text-center font-bold lg:text-justify">Kudumid on inspireeritud erinevatest loodusvärvidest ning kaunitest Eestimaa paikadest. </p>
                     </div>
                     <div class="relative order-2 lg:order-3">
                         <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-white mix-blend-multiply"></div>
@@ -29,7 +29,7 @@
                             <span>WÖÖL</span>-il on tähendusrikas osa täpitähtedel, kuna kudumid saavad alguse
                             just Saaremaa käsitöömeistrilt <span class="font-semibold">Piret</span>, kellel kogemust rohkem kui 25 aastat.
                         </p>
-                        <p class="text-lg mb-2 leading-relaxed text-center font-bold lg:text-justify">Kudumites kasutatakse vaid naturaalset toormaterjali ning peetakse lugu jätkusuutlikusest. Wööli tooted on valmistatud lamba- ja meriinovillast, mis on 100% naturaalsed.</p>
+                        <p class="text-lg mb-2 leading-relaxed text-center font-bold lg:text-justify">Kudumites kasutatakse vaid naturaalset toormaterjali ning peetakse lugu jätkusuutlikkusest. Wööli tooted on valmistatud lamba- ja meriinovillast, mis on 100% naturaalsed.</p>
                     </div>
                     <div class="relative order-3 lg:order-2">
                         <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-white mix-blend-multiply"></div>

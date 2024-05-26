@@ -43,3 +43,23 @@
     position: relative;
     overflow: hidden;
 }
+
+.lg\:left-fade:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #f9fafb);
+}
+
+.lg\:right-fade:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #f9fafb);
+}

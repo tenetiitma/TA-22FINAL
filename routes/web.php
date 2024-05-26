@@ -12,6 +12,7 @@ use App\Http\Livewire\ReturnPolicyPage;
 use App\Http\Livewire\SalesTermsPage;
 use App\Http\Livewire\SearchPage;
 use App\Http\Livewire\AboutPage;
+use App\Http\Livewire\ContactForm;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,6 +34,7 @@ Route::get('/sales-terms', SalesTermsPage::class)->name('salesterms.view');
 Route::get('/return-policy', ReturnPolicyPage::class)->name('returnpolicy.view');
 Route::get('/privacy-policy', PrivacyPolicyPage::class)->name('privacypolicy.view');
 Route::get('/about', AboutPage::class)->name('about.view');
+Route::get('/contact', ContactForm::class)->name('contact-form.view');
 
 
 Route::get('/collections/{slug}', CollectionPage::class)->name('collection.view');
