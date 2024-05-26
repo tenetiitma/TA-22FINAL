@@ -7,7 +7,7 @@
         <p>Reg nr 16227243</p>
         <br>
         <p>woolkudumid@gmail.com</p>
-        <p>(+372) 5101204</p>
+        <p>(+372) 51 01 204</p>
         <p class="mb-12">Saaremaa, Kuressaare</p><br>
         <p class="font-semibold text-center mx-auto max-w-xl">Soovid informatsiooni toote kohta, mida hetkel müügist ei leia või on muid toodetega seotud küsimusi, siis kirjuta meile julgelt ja võtame Sinuga ühendust!</p>
     </div>
