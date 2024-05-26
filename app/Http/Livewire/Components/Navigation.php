@@ -45,7 +45,7 @@ class Navigation extends Component
         $this->mehedCollection = Collection::where(DB::raw("JSON_EXTRACT(attribute_data, '$.name.value.en')"), 'Mehed')->first();
         $this->lapsedCollection = Collection::where(DB::raw("JSON_EXTRACT(attribute_data, '$.name.value.en')"), 'Lapsed')->first();
         $this->naisedSubCollection = Collection::where('parent_id', 1)->get();
-        $this->mehedSubCollection = Collection::where('parent_id', 28)->get();
+        $this->mehedSubCollection = Collection::where('parent_id', 2)->get();
         $this->lapsedSubCollection = Collection::where('parent_id', 3)->get();
     }
 
