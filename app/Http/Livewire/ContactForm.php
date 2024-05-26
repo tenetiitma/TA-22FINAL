@@ -46,7 +46,6 @@ class ContactForm extends Component
 
     public function render()
     {
-        return view('livewire.contact-form')
-        ->layout('layouts.storefront');
+        return view('livewire.contact-form');
     }
 }

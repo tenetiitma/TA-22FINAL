@@ -862,12 +862,6 @@ select {
 .mb-8 {
   margin-bottom: 2rem;
 }
-.mb-24 {
-  margin-bottom: 6rem;
-}
-.mt-10 {
-  margin-top: 2.5rem;
-}
 .mb-56 {
   margin-bottom: 14rem;
 }
@@ -1707,6 +1701,14 @@ select {
     width: 40%;
     height: 100%;
     background: linear-gradient(to left, rgba(255, 255, 255, 0), #f9fafb);
+}
+
+.max-w-md {
+    max-width: 28rem;
+}
+
+.max-w-lg {
+    max-width: 32rem;
 }
 
 .first\:flex:first-child {
