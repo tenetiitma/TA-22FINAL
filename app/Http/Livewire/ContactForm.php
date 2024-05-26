@@ -10,6 +10,7 @@ class ContactForm extends Component
     public $name;
     public $email;
     public $message;
+    public $loading = false;
 
     protected $rules = [
         'name' => ['required', 'string', 'regex:/^(?=.*[\pL])[\pL\s-]{3,}$/u'],

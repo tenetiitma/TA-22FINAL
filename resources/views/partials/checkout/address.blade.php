@@ -85,13 +85,7 @@
                                    :errors="$errors->get($type . '.line_two')">
                         <x-input.text wire:model.defer="{{ $type }}.line_two" />
                     </x-input.group>
-
-                    <!-- <x-input.group class="col-span-3 sm:col-span-2"
-                                   label="Address line 3"
-                                   :errors="$errors->get($type . '.line_three')">
-                        <x-input.text wire:model.defer="{{ $type }}.line_three" />
-                    </x-input.group> -->
-
+                    
                     <x-input.group class="col-span-3 sm:col-span-2"
                                    label="Linn"
                                    :errors="$errors->get($type . '.city')"
