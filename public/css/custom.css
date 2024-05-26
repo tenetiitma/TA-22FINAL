@@ -707,6 +707,15 @@ select {
     max-width: 1536px;
   }
 }
+.no-spinner {
+  -moz-appearance: textfield;
+}
+.no-spinner::-webkit-outer-spin-button, 
+    .no-spinner::-webkit-inner-spin-button {
+  margin: 0px;
+  -webkit-appearance: none;
+          appearance: none;
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1621,6 +1630,10 @@ select {
 }
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+[x-cloak] {
+    display: none;
 }
 
 .family {
