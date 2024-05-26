@@ -22,8 +22,8 @@
             {{ $this->randomCollection->translateAttribute('name') }}
         </h2>
 
-        <div class="grid grid-cols-2 mt-8 lg:grid-cols-4 gap-x-4 gap-y-8 mb-56">
-            @foreach ($this->randomCollection->products as $product)
+        <div class="grid grid-cols-2 mt-8 lg:grid-cols-4 gap-x-4 gap-y-8 mb-12">
+            @foreach ($this->randomCollection->products->take(4) as $product)
             <x-product-card :product="$product" />
             @endforeach
         </div>
