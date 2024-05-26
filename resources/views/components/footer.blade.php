@@ -1,6 +1,6 @@
 <footer class="bg-gray-50">
     <div class="max-w-screen-xl px-4 py-8 mx-auto text-center sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 max-w-lg space-y-12 mx-auto lg:grid-cols-2 lg:space-y-0">
+        <div class="grid grid-cols-2 max-w-lg mx-auto">
             <div>
                 <p class=" text-gray-600 font-semibold">E-pood</p>
                 <ul class="max-w-sm mt-4 text-gray-500 font-light text-sm text-center mx-auto">
