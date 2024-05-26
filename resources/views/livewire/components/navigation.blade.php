@@ -6,9 +6,9 @@
                 <x-brand.wool />
             </a>
             <nav class="hidden lg:gap-4 lg:flex lg:ml-8">
-                @livewire('dropdown', ['naisedCollection' => $naisedCollection])
-                @livewire('dropdown', ['mehedCollection' => $mehedCollection])
-                @livewire('dropdown', ['lapsedCollection' => $lapsedCollection])
+                @livewire('dropdown', ['naisedCollection' => $naisedCollection, 'naisedSubCollection' => $naisedSubCollection])
+                @livewire('dropdown', ['mehedCollection' => $mehedCollection, 'mehedSubCollection' => $mehedSubCollection])
+                @livewire('dropdown', ['lapsedCollection' => $lapsedCollection, 'lapsedSubCollection' => $lapsedSubCollection])
             </nav>
         </div>
 

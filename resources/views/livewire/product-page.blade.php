@@ -33,10 +33,6 @@
                                      :variant="$this->variant" />
                 </div>
 
-                <!-- <p class="mt-1 text-sm text-gray-500">
-                    {{ $this->variant->sku }}
-                </p> -->
-
                 <article class="mt-4 text-slate-700">
                     {!! $this->product->translateAttribute('description') !!}
                 </article>

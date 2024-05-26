@@ -15,12 +15,12 @@ class Navigation extends Component
      */
     public $term = null;
 
-    /** WOMEN */
     public $naisedCollection;
-    /** MEN */
+    public $naisedSubCollection;
     public $mehedCollection;
-    /** KIDS */
+    public $mehedSubCollection;
     public $lapsedCollection;
+    public $lapsedSubCollection;
 
     /**
      * {@inheritDoc}
@@ -44,6 +44,9 @@ class Navigation extends Component
         $this->naisedCollection = Collection::where(DB::raw("JSON_EXTRACT(attribute_data, '$.name.value.en')"), 'Naised')->first();
         $this->mehedCollection = Collection::where(DB::raw("JSON_EXTRACT(attribute_data, '$.name.value.en')"), 'Mehed')->first();
         $this->lapsedCollection = Collection::where(DB::raw("JSON_EXTRACT(attribute_data, '$.name.value.en')"), 'Lapsed')->first();
+        $this->naisedSubCollection = Collection::where('parent_id', 1)->get();
+        $this->mehedSubCollection = Collection::where('parent_id', 28)->get();
+        $this->lapsedSubCollection = Collection::where('parent_id', 3)->get();
     }
 
     public function render()
@@ -52,6 +55,9 @@ class Navigation extends Component
             'naisedCollection' => $this->naisedCollection,
             'mehedCollection' => $this->mehedCollection,
             'lapsedCollection' => $this->lapsedCollection,
+            'naisedSubCollection' => $this->naisedSubCollection,
+            'mehedSubCollection' => $this->mehedSubCollection,
+            'lapsedSubCollection' => $this->lapsedSubCollection,
         ]);
     }
 }
