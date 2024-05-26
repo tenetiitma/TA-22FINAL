@@ -1,5 +1,5 @@
 <div class="max-w-screen-xl px-6 py-32 mx-auto sm:px-12">
-    <div class="mx-auto text-center">
+    <div class="mx-auto text-center text-stone-600">
         <h1 class="text-3xl font-medium sm:text-5xl">
             Korduma Kippuvad Küsimused
         </h1>

@@ -1,5 +1,5 @@
 <div class="max-w-screen-xl px-6 py-32 mx-auto sm:px-12">
-    <div class="px-8 text-justify">
+    <div class="px-8 text-justify text-stone-600">
         <h1 class="text-3xl mx-auto mb-8 text-center font-medium sm:text-5xl">
             TAGASTAMISTINGIMUSED
         </h1>
