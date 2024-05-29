@@ -1651,13 +1651,13 @@ select {
             rgba(255, 255, 255, 0.7),
             rgba(255, 255, 255, 0.7)
         ),
-        url("/images/family.jpg");
+        url("/images/family.jpeg");
     background-position-y: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
-    -webkit-animation: fadeIn 1s ease-in-out forwards;
-            animation: fadeIn 1s ease-in-out forwards;
+    -webkit-animation: fadeIn 1s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
 }
 
 .backgr-fade {
