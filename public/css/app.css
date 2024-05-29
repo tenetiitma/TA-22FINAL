@@ -2026,6 +2026,20 @@ select {
     border-left-color: transparent;
   }
 
+  .lg\:bg-gradient-to-r {
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  }
+
+  .lg\:from-transparent {
+    --tw-gradient-from: transparent;
+    --tw-gradient-to: rgb(0 0 0 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .lg\:to-white {
+    --tw-gradient-to: #fff;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;

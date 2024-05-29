@@ -15,7 +15,6 @@
                         <p class="text-lg mb-2 leading-relaxed text-center font-bold lg:text-justify">Kudumid on inspireeritud erinevatest loodusvärvidest ning kaunitest Eestimaa paikadest. </p>
                     </div>
                     <div class="relative order-2 lg:order-3">
-                        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-white mix-blend-multiply"></div>
                         <div class="fade-container lg:right-fade">
                             <img class="w-full h-auto" src="{{ asset('images/abt2.jpeg') }}" alt="About Image 2">
                         </div>
@@ -32,7 +31,6 @@
                         <p class="text-lg mb-2 leading-relaxed text-center font-bold lg:text-justify">Kudumites kasutatakse vaid naturaalset toormaterjali ning peetakse lugu jätkusuutlikkusest. Wööli tooted on valmistatud lamba- ja meriinovillast, mis on 100% naturaalsed.</p>
                     </div>
                     <div class="relative order-3 lg:order-2">
-                        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-white mix-blend-multiply"></div>
                         <div class="fade-container lg:left-fade">
                             <img class="w-full h-auto" src="{{ asset('images/abt1.jpeg') }}" alt="About Image 1">
                         </div>
