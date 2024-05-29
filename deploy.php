@@ -24,9 +24,22 @@ task('opcache:clear', function () {
     run('killall php82-cgi || true');
 })->desc('Clear opcache');
 
+// Install npm dependencies
+task('npm:install', function () {
+    run('cd {{release_path}} && npm install');
+})->desc('Install npm dependencies');
+
+// Run npm build
+task('npm:build', function () {
+    run('cd {{release_path}} && npm run production');
+})->desc('Build assets with npm');
+
+
 task('deploy', [
     'deploy:prepare',
     'deploy:vendors',
+    'npm:install',
+    'npm:build',
     'artisan:storage:link',
     'artisan:view:cache',
     'artisan:config:cache',
