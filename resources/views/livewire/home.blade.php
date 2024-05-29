@@ -1,5 +1,6 @@
 <div class="max-w-screen-xl px-4 mx-auto space-y-12 sm:px-6 lg:px-8">
     <section class="family">
+        <!-- INTRO INFO -->
         <div class="max-w-screen-xl px-8 py-24 mx-auto">
             <div class="max-w-xl mx-auto family-box rounded-lg p-6 text-stone-600 text-center">
                 <h1 class="text-3xl font-medium sm:text-5xl" style="font-family: allura">
@@ -15,6 +16,7 @@
         </div>
     </section>
 
+    <!-- RANDOM COLLECTION PROMOTION -->
     @if ($this->randomCollection)
     <section class="text-stone-600">
         <h1 class="text-2xl lg:text-3xl">UUED TOOTED KATEGOORIAS</h1>
@@ -29,8 +31,9 @@
         </div>
     </section>
     @endif
+
     <x-aboutus-banner />
+
     @livewire('stats-section')
-    <div class="my-24">
-    </div>
+    <br>
 </div>
