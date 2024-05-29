@@ -30,6 +30,7 @@
     </section>
     @endif
     <x-aboutus-banner />
+    @livewire('stats-section')
     <div class="my-24">
     </div>
 </div>
