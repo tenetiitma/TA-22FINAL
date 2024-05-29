@@ -31,28 +31,63 @@
 
                     <div x-cloak x-transition x-show="mobileMenu" class="absolute right-0 top-auto z-50 w-screen p-4 sm:max-w-xs">
                         <ul x-on:click.away="mobileMenu = false" class="p-6 space-y-4 bg-white border border-gray-100 shadow-xl rounded-xl">
+                            <!-- WOMEN MENU -->
                             <li>
-                                @if($naisedCollection)
-                                <a href="{{ route('collection.view', $naisedCollection->defaultUrl->slug) }}" class="text-md text-stone-600 uppercase transition hover:opacity-50">
-                                    {{ $naisedCollection->translateAttribute('name') }}
-                                </a>
-                                @endif
+                                <div x-data="{ openNaisedSubMenu: false }">
+                                    <a wire:click.prevent="$toggle('openNaisedSubMenu')" href="#" class="text-md font-semibold text-stone-600 uppercase transition hover:opacity-50">
+                                        {{ $naisedCollection->translateAttribute('name') }}
+                                    </a>
+                                    @if($openNaisedSubMenu)
+                                    <ul class="pt-4">
+                                        @foreach($naisedSubCollection as $collection)
+                                        <li class="ml-6 mb-2">
+                                            <a href="{{ route('collection.view', $collection->defaultUrl->slug) }}" class="text-md text-stone-600 uppercase transition hover:opacity-50">
+                                                {{ $collection->translateAttribute('name') }}
+                                            </a>
+                                        </li>
+                                        @endforeach
+                                    </ul>
+                                    @endif
+                                </div>
                             </li>
+                            <!-- MEN MENU -->
                             <li>
-                                @if($mehedCollection)
-                                <a href="{{ route('collection.view', $mehedCollection->defaultUrl->slug) }}" class="text-md text-stone-600 uppercase transition hover:opacity-50">
-                                    {{ $mehedCollection->translateAttribute('name') }}
-                                </a>
-                                @endif
+                                <div x-data="{ openMehedSubMenu: false }">
+                                    <a wire:click.prevent="$toggle('openMehedSubMenu')" href="#" class="text-md font-semibold text-stone-600 uppercase transition hover:opacity-50">
+                                        {{ $mehedCollection->translateAttribute('name') }}
+                                    </a>
+                                    @if($openMehedSubMenu)
+                                    <ul class="pt-4">
+                                        @foreach($mehedSubCollection as $collection)
+                                        <li class="ml-6 mb-2">
+                                            <a href="{{ route('collection.view', $collection->defaultUrl->slug) }}" class="text-md text-stone-600 uppercase transition hover:opacity-50">
+                                                {{ $collection->translateAttribute('name') }}
+                                            </a>
+                                        </li>
+                                        @endforeach
+                                    </ul>
+                                    @endif
+                                </div>
                             </li>
+                            <!-- CHILDREN MENU -->
                             <li>
-                                @if($mehedCollection)
-                                <a href="{{ route('collection.view', $lapsedCollection->defaultUrl->slug) }}" class="text-md text-stone-600 uppercase transition hover:opacity-50">
-                                    {{ $lapsedCollection->translateAttribute('name') }}
-                                </a>
-                                @endif
+                                <div x-data="{ openLapsedSubMenu: false }">
+                                    <a wire:click.prevent="$toggle('openLapsedSubMenu')" href="#" class="text-md font-semibold text-stone-600 uppercase transition hover:opacity-50">
+                                        {{ $lapsedCollection->translateAttribute('name') }}
+                                    </a>
+                                    @if($openLapsedSubMenu)
+                                    <ul class="pt-4">
+                                        @foreach($lapsedSubCollection as $collection)
+                                        <li class="ml-6 mb-2">
+                                            <a href="{{ route('collection.view', $collection->defaultUrl->slug) }}" class="text-md text-stone-600 uppercase transition hover:opacity-50">
+                                                {{ $collection->translateAttribute('name') }}
+                                            </a>
+                                        </li>
+                                        @endforeach
+                                    </ul>
+                                    @endif
+                                </div>
                             </li>
-
                         </ul>
                     </div>
                 </div>

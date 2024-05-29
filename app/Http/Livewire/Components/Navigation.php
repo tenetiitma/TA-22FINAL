@@ -21,7 +21,9 @@ class Navigation extends Component
     public $mehedSubCollection;
     public $lapsedCollection;
     public $lapsedSubCollection;
-
+    public $openNaisedSubMenu = false;
+    public $openMehedSubMenu = false;
+    public $openLapsedSubMenu = false;
     /**
      * {@inheritDoc}
      */
