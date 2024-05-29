@@ -1,4 +1,4 @@
-<footer class="bg-gray-50">
+<footer class="bg-gray-50 rounded">
     <div class="max-w-screen-xl px-4 py-8 mx-auto text-center sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 gap-12 lg:grid-cols-3 text-center lg:text-left">
              <!-- LOGO INFO -->

@@ -25,7 +25,7 @@
             <br><br>
             <h1 class="text-xl font-semibold sm:text-2xl">Kas on võimalik tellida kudumit vastavalt enda erisoovidele?</h1>
             <p class="font-light">Jah, kui see on teostatav. Selleks tuleb täita e-poe päringuvorm; saata e-mail või võtta ühendust telefoni teel numbril
-            <p class="font-semibold">+3725101204</p> (Võivad kohanduda lisatasud)</p>
+            <p class="font-semibold">+3725101204</p><p class="font-light">(Võivad kohanduda lisatasud)</p>
             <br><br>
             <h1 class="text-xl font-semibold sm:text-2xl">Kas on võimalik osta kinkekaarti?</h1>
             <p class="font-light">Kinkekaardid on e-poodi tulemas peatselt, seniks võta ühendust meiega
