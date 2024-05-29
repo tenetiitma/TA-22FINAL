@@ -18,4 +18,5 @@ mix
   ])
   .postCss("resources/css/custom.css", "public/css/custom.css", [
     require("tailwindcss"),
-  ]);
+  ])
+  .version();

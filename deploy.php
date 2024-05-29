@@ -31,7 +31,7 @@ task('npm:install', function () {
 
 // Run npm build
 task('npm:build', function () {
-    run('cd {{release_path}} && npm run production');
+    run('cd {{release_path}} && npm run prod');
 })->desc('Build assets with npm');
 
 
