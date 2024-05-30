@@ -90,7 +90,6 @@ class Cart extends Component
     public function mapLines()
     {
         $this->lines = $this->cartLines->map(function ($line) {
-            // Get the price with tax 22%
             $price = Pricing::for($line->purchasable)->get()->matched;
             $priceWithTax = $price ? ($price->price->value / 100) * 1.22 : 0;
 
@@ -125,11 +124,9 @@ class Cart extends Component
     protected function calculateSubtotalWithTax()
 {
     return $this->cartLines->sum(function ($line) {
-        // Calculate the price with tax for each line
         $price = Pricing::for($line->purchasable)->get()->matched;
         $priceWithTax = $price ? ($price->price->value / 100) * 1.22 : 0;
 
-        // Calculate the subtotal with tax for each line
         return $priceWithTax * $line->quantity;
     });
 }

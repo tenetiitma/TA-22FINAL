@@ -6,8 +6,7 @@
             </span>
 
             <h1 class="mt-8 text-3xl font-extrabold sm:text-5xl">
-                <span class="block"
-                      role="img">
+                <span class="block" role="img">
                     🥳
                 </span>
 
@@ -24,8 +23,7 @@
                 </strong>
             </p>
 
-            <a class="inline-block px-8 py-3 mt-8 text-sm font-medium text-center text-white bg-stone-600 rounded-lg hover:ring-1 hover:ring-stone-600"
-               href="{{ url('/') }}">
+            <a class="inline-block px-8 py-3 mt-8 text-sm font-medium text-center text-white bg-stone-600 rounded-lg hover:ring-1 hover:ring-stone-600" href="{{ url('/') }}">
                 Pealehele
             </a>
         </div>

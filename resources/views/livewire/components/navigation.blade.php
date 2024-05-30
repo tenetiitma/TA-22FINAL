@@ -5,11 +5,13 @@
                 <span class="sr-only">Home</span>
                 <x-brand.wool />
             </a>
+
             <nav class="hidden lg:gap-4 lg:flex lg:ml-8">
                 @livewire('dropdown', ['naisedCollection' => $naisedCollection, 'naisedSubCollection' => $naisedSubCollection])
                 @livewire('dropdown', ['mehedCollection' => $mehedCollection, 'mehedSubCollection' => $mehedSubCollection])
                 @livewire('dropdown', ['lapsedCollection' => $lapsedCollection, 'lapsedSubCollection' => $lapsedSubCollection])
             </nav>
+            
         </div>
 
         <div class="flex items-center justify-between flex-1 ml-4 lg:justify-end">

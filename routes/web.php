@@ -36,7 +36,6 @@ Route::get('/privacy-policy', PrivacyPolicyPage::class)->name('privacypolicy.vie
 Route::get('/about', AboutPage::class)->name('about.view');
 Route::get('/contact', ContactForm::class)->name('contact-form.view');
 
-
 Route::get('/collections/{slug}', CollectionPage::class)->name('collection.view');
 
 Route::get('/products/{slug}', ProductPage::class)->name('product.view');

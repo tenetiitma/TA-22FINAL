@@ -1,4 +1,5 @@
 <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+
     <!-- WOMEN -->
     @if($naisedCollection)
     <a href="{{ route('collection.view', $naisedCollection->defaultUrl->slug) }}" class="text-sm text-stone-600 uppercase transition hover:opacity-50">
@@ -12,6 +13,7 @@
         </ul>
     </div>
     @endif
+
     <!-- MEN -->
     @if($mehedCollection)
     <a href="{{ route('collection.view', $mehedCollection->defaultUrl->slug) }}" class="text-sm text-stone-600 uppercase transition hover:opacity-50">
@@ -25,6 +27,7 @@
         </ul>
     </div>
     @endif
+
     <!-- CHILDREN -->
     @if($lapsedCollection)
     <a href="{{ route('collection.view', $lapsedCollection->defaultUrl->slug) }}" class="text-sm text-stone-600 uppercase transition hover:opacity-50">
@@ -38,4 +41,5 @@
         </ul>
     </div>
     @endif
+    
 </div>

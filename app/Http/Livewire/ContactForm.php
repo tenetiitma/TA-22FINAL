@@ -12,6 +12,7 @@ class ContactForm extends Component
     public $message;
     public $loading = false;
 
+    // Added Regex to minimize spam names
     protected $rules = [
         'name' => ['required', 'string', 'regex:/^(?=.*[\pL])[\pL\s-]{3,}$/u'],
         'email' => 'required|email',

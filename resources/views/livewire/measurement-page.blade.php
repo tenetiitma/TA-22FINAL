@@ -1,11 +1,11 @@
 <section class="bg-gray-50">
     <div class="max-w-screen-xl px-4 py-32 mx-auto sm:px-6 lg:px-8">
-        <div class="px-8 text-justify">
-            <h1 class="text-4xl mx-auto mb-12 text-center text-stone-600 font-medium sm:text-5xl">
+        <div class="px-8 mb-12 text-center">
+            <strong class="text-4xl mx-auto text-stone-600 sm:text-5xl">
                 MÕÕDUTABELID
-            </h1>
+            </strong>
         </div>
-        <div class="space-y-12 sm:leading-relaxed">
+        <div class="space-y-24 sm:leading-relaxed">
             <div class="text-lg font-light text-center">
                 <p class="font-semibold text-2xl">NB! Mõõdud on CM formaadis</p>
             </div>

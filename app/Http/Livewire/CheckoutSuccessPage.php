@@ -13,7 +13,6 @@ class CheckoutSuccessPage extends Component
     use PerformsRedirects;
 
     public ?Cart $cart;
-
     public Order $order;
 
     /**

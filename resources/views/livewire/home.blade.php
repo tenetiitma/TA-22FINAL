@@ -1,6 +1,6 @@
 <div class="max-w-screen-xl px-4 mx-auto space-y-12 sm:px-6 lg:px-8">
+    <!-- INTRO INFO -->
     <section class="family">
-        <!-- INTRO INFO -->
         <div class="max-w-screen-xl px-8 py-24 mx-auto">
             <div class="max-w-xl mx-auto family-box rounded-lg p-6 text-stone-600 text-center">
                 <h1 class="text-3xl font-medium sm:text-5xl" style="font-family: allura">

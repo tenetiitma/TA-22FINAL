@@ -7,6 +7,7 @@ use Livewire\Component;
 class Modal extends Component
 {
     public $imageUrl;
+
     protected $listeners = ['modalOpened' => 'openModal'];
 
     public function openModal($imageUrl) {

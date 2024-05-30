@@ -52,7 +52,6 @@ class CheckoutAddress extends Component
 
         $this->address = $this->cart->addresses->first(fn ($add) => $add->type == $this->type) ?: new CartAddress;
 
-        // If we have an existing ID then it should already be valid and ready to go.
         $this->editing = (bool) ! $this->address->id;
     }
 
