@@ -9,8 +9,8 @@
                 <p class="text-lg mb-2 leading-relaxed text-center underline underline-offset-2 font-bold transition hover:opacity-50"><a href="{{ route('about.view') }}">Vaata lisaks</a></p>
             </div>
             <div class="relative lg:order-1">
-                <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-white mix-blend-multiply"></div>
-                <img class="w-full h-auto rounded-lg" src="{{ asset('images/us.jpeg') }}" alt="About Image">
+                <div class="lg:absolute lg:top-0 lg:right-0 lg:w-36 lg:h-full lg:bg-gradient-to-r lg:from-transparent lg:to-gray-100"></div>
+                <img class="w-full h-auto rounded" src="{{ asset('images/us.jpeg') }}" alt="About Image">
             </div>
         </div>
     </div>
