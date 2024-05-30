@@ -10,7 +10,7 @@
             </div>
             <div class="relative lg:order-1">
                 <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-white mix-blend-multiply"></div>
-                <img class="w-full h-auto" src="{{ asset('images/us.jpeg') }}" alt="About Image">
+                <img class="w-full h-auto rounded-lg" src="{{ asset('images/us.jpeg') }}" alt="About Image">
             </div>
         </div>
     </div>

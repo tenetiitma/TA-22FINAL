@@ -17,17 +17,15 @@
     display: none;
 }
 
-.gradient-text:hover {
-    .grad {
-        zoom: 110%;
-        background-clip: text;
-        color: transparent;
-        background-image: linear-gradient(
-            to right,
-            rgba(255, 215, 0, 1),
-            rgba(255, 165, 0, 1)
-        );
-    }
+.gradient-text:hover .grad {
+    zoom: 110%;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 215, 0, 1),
+        rgba(255, 165, 0, 1)
+    );
 }
 
 .family {

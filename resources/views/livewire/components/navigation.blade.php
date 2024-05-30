@@ -79,7 +79,7 @@
                                     <ul class="pt-4">
                                         @foreach($lapsedSubCollection as $collection)
                                         <li class="ml-6 mb-2">
-                                            <a href="{{ route('collection.view', $collection->defaultUrl->slug) }}" class="text-md text-stone-600 uppercase transition hover:opacity-50">
+                                            <a href="{{ route('collection.view', $collection->defaultUrl->slug) }}" class="text-md text-stone-600">
                                                 {{ $collection->translateAttribute('name') }}
                                             </a>
                                         </li>

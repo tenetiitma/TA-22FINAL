@@ -32,6 +32,13 @@ class AddToCart extends Component
         ];
     }
 
+        public function messages()
+    {
+        return [
+            'quantity.min' => 'Palun vali vähemalt 1 toode',
+        ];
+    }
+
     public function addToCart()
     {
         $this->validate();
