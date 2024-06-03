@@ -810,6 +810,10 @@ select {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 .ml-1 {
   margin-left: 0.25rem;
 }

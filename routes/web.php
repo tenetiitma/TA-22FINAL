@@ -13,6 +13,7 @@ use App\Http\Livewire\SalesTermsPage;
 use App\Http\Livewire\SearchPage;
 use App\Http\Livewire\AboutPage;
 use App\Http\Livewire\ContactForm;
+use App\Http\Livewire\SubColPage;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,6 +38,7 @@ Route::get('/about', AboutPage::class)->name('about.view');
 Route::get('/contact', ContactForm::class)->name('contact-form.view');
 
 Route::get('/collections/{slug}', CollectionPage::class)->name('collection.view');
+Route::get('/category/{slug}', SubColPage::class)->name('sub-col.view');
 
 Route::get('/products/{slug}', ProductPage::class)->name('product.view');
 
