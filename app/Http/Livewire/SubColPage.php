@@ -42,6 +42,7 @@ class SubColPage extends Component
                 abort(404);
         }
 
+
     }
 
     public function render()
