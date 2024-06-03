@@ -1,8 +1,8 @@
 <div class="max-w-screen-xl px-6 py-32 mx-auto sm:px-12">
     <div class="px-8 text-justify text-stone-600">
         <div class="text-center mb-8">
-            <strong class="text-3xl mx-auto sm:text-5xl">
-                PRIVAATSUSTINGIMUSED
+            <strong class="text-2xl mx-auto sm:text-5xl">
+                PRIVAATSUSPOLIITIKA
             </strong>
         </div>
 
