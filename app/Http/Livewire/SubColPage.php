@@ -14,7 +14,7 @@ class SubColPage extends Component
      * @var string
      */
     public $term = null;
-    
+
     public $subCollection;
 
     protected $queryString = [
@@ -43,7 +43,6 @@ class SubColPage extends Component
         }
 
     }
-
 
     public function render()
     {
