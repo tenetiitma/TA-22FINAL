@@ -5,15 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WÖÖL</title>
-    <meta name="description" content="Example of an ecommerce storefront built with Lunar.">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <meta name="description" content="Saaremaiselt mÖnus ostukeskkond.">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/custom.css') }}" rel="stylesheet">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="icon" href="{{ asset('favicon.svg') }}">
+    <link rel="icon" href="{{ asset('/images/logotrans.png') }}">
     @livewireStyles
     @stripeScripts
 </head>
 
-<body class="antialiased text-gray-900">
+<body class="antialiased text-stone-700">
     <header class="relative border-b border-gray-100">
         <div class="flex items-center h-16 px-4 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
             <a class="flex items-center flex-shrink-0" href="{{ url('/') }}">

@@ -17,8 +17,8 @@ class ShippingModifier
 
         ShippingManifest::addOption(
             new ShippingOption(
-                name: 'Basic Delivery',
-                description: 'Basic Delivery',
+                name: 'Postiga saatmine aadressile',
+                description: 'Postiga saatmine aadressile',
                 identifier: 'BASDEL',
                 price: new Price(500, $cart->currency, 1),
                 taxClass: $taxClass
@@ -27,10 +27,10 @@ class ShippingModifier
 
         ShippingManifest::addOption(
             new ShippingOption(
-                name: 'Express Delivery',
-                description: 'Express Delivery',
+                name: 'Tulen ise järgi',
+                description: 'Tulen ise järgi',
                 identifier: 'EXPDEL',
-                price: new Price(1000, $cart->currency, 1),
+                price: new Price(0, $cart->currency, 1),
                 taxClass: $taxClass
             )
         );

@@ -12,7 +12,7 @@
         <p class="font-semibold text-center mx-auto max-w-xl">Soovid informatsiooni toote kohta, mida hetkel müügist ei leia või on muid toodetega seotud küsimusi, siis kirjuta meile julgelt ja võtame Sinuga ühendust!</p>
     </div>
 
-    <div class="grid grid-cols-2 mt-12 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 mt-12 gap-6">
         <div class="max-w-md bg-white p-8 mt-10 mb-2 rounded-lg shadow-lg">
             @if (session()->has('success'))
             <div class="bg-green-500 text-white p-3 rounded mb-4">

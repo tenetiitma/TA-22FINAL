@@ -27,6 +27,7 @@
 
         @if ($paymentType == 'card')
         <livewire:stripe.payment :cart="$cart" :returnUrl="route('checkout.view')" />
+
         @endif
 
         @if ($paymentType == 'cash-in-hand')
@@ -35,7 +36,7 @@
                 Tasumine sularahas koha peal
             </div>
 
-            <button class="px-5 py-3 mt-4 text-sm font-medium text-white bg-stone-600 rounded-lg hover:bg-stone-500" type="submit" wire:key="payment_submit_btn">
+            <button class="px-5 py-3 mt-4 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-500" type="submit" wire:key="payment_submit_btn">
                 <span wire:loading.remove.delay wire:target="checkout">
                     Kinnitan tellimuse
                 </span>
