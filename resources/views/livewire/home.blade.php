@@ -3,9 +3,9 @@
     <section class="family">
         <div class="max-w-screen-xl px-8 py-24 mx-auto">
             <div class="max-w-xl mx-auto family-box rounded-lg p-6 text-stone-600 text-center">
-                <h1 class="text-3xl font-medium sm:text-5xl" style="font-family: allura">
+                <p class="text-3xl font-medium sm:text-5xl" style="font-family: allura">
                     Hoiame traditsioone ja kehad soojas!
-                </h1>
+                </p>
 
                 <p class="mt-4 font-light sm:leading-relaxed sm:text-xl">
                     <span class="font-semibold">WÖÖL</span> on väike pereettevõte Kuressaares, mis on üle 25 aasta müünud oma kudumeid Kuressaare Turul.
@@ -19,7 +19,7 @@
     <!-- RANDOM COLLECTION PROMOTION -->
     @if ($this->randomCollection)
     <section class="text-stone-600">
-        <h1 class="text-2xl lg:text-3xl">UUED TOOTED KATEGOORIAS</h1>
+        <p class="text-2xl lg:text-3xl">UUED TOOTED KATEGOORIAS</p>
         <h2 class="text-2xl font-bold lg:text-3xl">
             {{ $this->randomCollection->translateAttribute('name') }}
         </h2>

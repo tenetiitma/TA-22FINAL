@@ -24,9 +24,9 @@
 
             <div>
                 <div class="flex items-center justify-between">
-                    <h1 class="text-xl font-bold">
+                    <p class="text-xl font-bold">
                         {{ $this->product->translateAttribute('name') }}
-                    </h1>
+                    </p>
 
                     <x-product-price class="ml-4 font-medium" :variant="$this->variant" />
                 </div>

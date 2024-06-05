@@ -13,7 +13,7 @@
             <p class="font-semibold">+3725101204</p>
             </p>
             <br><br>
-            <h1 class="text-xl font-semibold sm:text-2xl">Kas tooted on saadaval ka tavakaupluses?</h1>
+            <p class="text-xl font-semibold sm:text-2xl">Kas tooted on saadaval ka tavakaupluses?</p>
             <p class="font-light">Tooted on saadaval vaid e-poes.</p>
             <br><br>
             <p class="text-xl font-semibold sm:text-2xl">Kas saan tellitud toodet tagastada või vahetada teise mudeli vastu?</p>

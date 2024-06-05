@@ -13,7 +13,7 @@
                 <span class="block mt-1 text-blue-500">
                     Suur tänu tellimuse eest!
                 </span>
-</p>
+            </p>
 
             <p class="mt-4 font-medium sm:text-lg">
                 Sinu tellimuse number on
