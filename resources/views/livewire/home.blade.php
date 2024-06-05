@@ -9,7 +9,7 @@
 
                 <p class="mt-4 font-light sm:leading-relaxed sm:text-xl">
                     <span class="font-semibold">WÖÖL</span> on väike pereettevõte Kuressaares, mis on üle 25 aasta müünud oma kudumeid Kuressaare Turul.
-                    <br><br>Kõik tooted on valmistatud käsitööna Saaremaal 🩷
+                    <br><br>Kõik tooted on valmistatud käsitööna Saaremaal &#x1FA77;
                 </p>
 
             </div>

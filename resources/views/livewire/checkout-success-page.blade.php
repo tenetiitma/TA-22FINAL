@@ -5,15 +5,15 @@
                 Tellimus on kätte saadud!
             </span>
 
-            <h1 class="mt-8 text-3xl font-extrabold sm:text-5xl">
-                <span class="block" role="img">
-                    🥳
+            <p class="mt-8 text-3xl font-extrabold sm:text-5xl">
+                <span class="block">
+                    &#x1F973;
                 </span>
 
                 <span class="block mt-1 text-blue-500">
                     Suur tänu tellimuse eest!
                 </span>
-            </h1>
+</p>
 
             <p class="mt-4 font-medium sm:text-lg">
                 Sinu tellimuse number on

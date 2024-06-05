@@ -2,5 +2,10 @@ Minu lõputööks on Kuressaare väikeettevõttele WÖÖL teha funktsioneeriv ko
 Nad on 25 aastat käinud Kuressaare Turul müümas oma käsitööd ning soovisid nüüd laiendada oma turgu ja võimalusi luues endale e-poe.
 
 ---
+
 Serveri jooksutamiseks kasutada:
-php artisan serve
+php artisan serve ja npm run watch.
+
+---
+
+LIVE kodulehekülg: https://wool.ta22tiitma.itmajakas.ee/
