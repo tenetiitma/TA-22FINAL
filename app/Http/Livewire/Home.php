@@ -11,45 +11,48 @@ class Home extends Component
     /**
      * Return the sale collection.
      *
-     * @return void
+     * @return \Lunar\Models\Collection|null
      */
-    public function getSaleCollectionProperty()
+    public function getCollectionProperty(): ?Collection
     {
-        return Url::whereElementType(Collection::class)->whereSlug('sale')->first()?->element ?? null;
+        return Url::whereElementType(Collection::class)->first()?->element ?? null;
     }
 
     /**
-     * Return all images in sale collection.
+     * Return all images in the sale collection.
      *
-     * @return void
+     * @return \Illuminate\Support\Collection|null
      */
-    public function getSaleCollectionImagesProperty()
+    public function getCollectionImagesProperty()
     {
-        if (! $this->getSaleCollectionProperty()) {
-            return;
+        $randomCollection = $this->getRandomCollectionProperty();
+
+        if (!$randomCollection) {
+            return null;
         }
 
-        $collectionProducts = $this->getSaleCollectionProperty()
-            ->products()->inRandomOrder()->limit(4)->get();
+        $collectionProducts = $randomCollection->products()->inRandomOrder()->limit(4)->get();
 
-        $saleImages = $collectionProducts->map(function ($product) {
+        $productImages = $collectionProducts->map(function ($product) {
             return $product->thumbnail;
         });
 
-        return $saleImages->chunk(2);
+        return $productImages->chunk(2);
     }
 
     /**
      * Return a random collection.
      *
-     * @return void
+     * @return \Lunar\Models\Collection|null
      */
-    public function getRandomCollectionProperty()
+    public function getRandomCollectionProperty(): ?Collection
     {
         $collections = Url::whereElementType(Collection::class);
 
-        if ($this->getSaleCollectionProperty()) {
-            $collections = $collections->where('element_id', '!=', $this->getSaleCollectionProperty()?->id);
+        $currentCollection = $this->getCollectionProperty();
+
+        if ($currentCollection) {
+            $collections = $collections->where('element_id', '!=', $currentCollection->id);
         }
 
         return $collections->inRandomOrder()->first()?->element;

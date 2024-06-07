@@ -20,9 +20,9 @@
     @if ($this->randomCollection)
     <section class="text-stone-600">
         <p class="text-2xl lg:text-3xl">UUED TOOTED KATEGOORIAS</p>
-        <h2 class="text-2xl font-bold lg:text-3xl">
+        <p class="text-2xl font-bold lg:text-3xl">
             {{ $this->randomCollection->translateAttribute('name') }}
-        </h2>
+        </p>
 
         <div class="grid grid-cols-2 mt-8 lg:grid-cols-4 gap-x-4 gap-y-8 mb-12">
             @foreach ($this->randomCollection->products->take(4) as $product)

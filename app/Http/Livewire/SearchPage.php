@@ -10,25 +10,12 @@ class SearchPage extends Component
 {
     use WithPagination;
 
-    /**
-     * {@inheritDoc}
-     */
     protected $queryString = [
         'term',
     ];
 
-    /**
-     * The search term.
-     *
-     * @var string
-     */
     public ?string $term = null;
 
-    /**
-     * Return the search results.
-     *
-     * @return \Illuminate\Pagination\LengthAwarePaginator
-     */
     public function getResultsProperty()
     {
         return Product::search($this->term)->paginate(50);
