@@ -52,6 +52,13 @@ class CollectionPage extends Component
      */
     public function render()
     {
-        return view('livewire.collection-page');
+        $translatedName = "WÖÖL | " . $this->collection->translateAttribute('name');
+        $metaDescription = "Kollektsioon: " . $translatedName;
+
+        return view('livewire.collection-page')
+        ->layout('layouts.storefront', [
+                'title' => $translatedName,
+                'metaDescription' => $metaDescription
+            ]);
     }
 }

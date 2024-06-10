@@ -11,6 +11,8 @@ class ProductPage extends Component
 {
     use FetchesUrls, PerformsRedirects;
 
+    public $title;
+    public $metaDescription;
     /**
      * The selected option values.
      *
@@ -135,6 +137,13 @@ class ProductPage extends Component
      */
     public function render()
     {
-        return view('livewire.product-page');
+        $translatedName = "WÖÖL | " . $this->product->translateAttribute('name');
+        $metaDescription = "Tööteleht tootele: " . $translatedName;
+
+        return view('livewire.product-page')
+        ->layout('layouts.storefront', [
+                'title' => $translatedName,
+                'metaDescription' => $metaDescription
+            ]);
     }
 }

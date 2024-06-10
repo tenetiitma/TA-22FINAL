@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WÖÖL</title>
+    <title>WÖÖL | Ostukorv</title>
     <meta name="description" content="Saaremaiselt mÖnus ostukeskkond.">
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="{{ mix('css/custom.css') }}" rel="stylesheet">
