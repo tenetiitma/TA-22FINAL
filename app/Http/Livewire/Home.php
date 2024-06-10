@@ -8,6 +8,8 @@ use Lunar\Models\Url;
 
 class Home extends Component
 {
+    public $title;
+    public $metaDescription;
     /**
      * Return the sale collection.
      *
@@ -58,8 +60,18 @@ class Home extends Component
         return $collections->inRandomOrder()->first()?->element;
     }
 
+    public function mount()
+    {
+        $this->title = "WÖÖL";
+        $this->metaDescription = "Saaremaiselt mÖnus käsitöö";
+    }
+
     public function render()
     {
-        return view('livewire.home');
+        return view('livewire.home')
+            ->layout('layouts.storefront', [
+                'title' => $this->title,
+                'metaDescription' => $this->metaDescription
+            ]);
     }
 }

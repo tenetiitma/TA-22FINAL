@@ -18,7 +18,7 @@
 
                     <div class="relative order-2 lg:order-3">
                         <div class="fade-container lg:right-fade">
-                            <img class="w-full h-auto" src="{{ asset('images/abt2.jpeg') }}" alt="About Image 2">
+                            <img class="w-full h-auto" src="{{ asset('images/abt2.jpeg') }}" loading="lazy" alt="About Image 2">
                         </div>
                     </div>
 
@@ -36,7 +36,7 @@
 
                     <div class="relative order-3 lg:order-2">
                         <div class="fade-container lg:left-fade">
-                            <img class="w-full h-auto" src="{{ asset('images/abt1.jpeg') }}" alt="About Image 1">
+                            <img class="w-full h-auto" src="{{ asset('images/abt1.jpeg') }}" loading="lazy" alt="About Image 1">
                         </div>
                     </div>
 

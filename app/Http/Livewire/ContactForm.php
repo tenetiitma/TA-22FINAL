@@ -7,6 +7,8 @@ use Livewire\Component;
 
 class ContactForm extends Component
 {
+    public $title;
+    public $metaDescription;
     public $name;
     public $email;
     public $message;
@@ -19,7 +21,7 @@ class ContactForm extends Component
         'message' => 'required|string|min:5'
     ];
 
-        public function messages()
+    public function messages()
     {
         return [
             'name.required' => 'Palun sisestage nimi',
@@ -46,8 +48,18 @@ class ContactForm extends Component
         $this->dispatchBrowserEvent('message-sent');
     }
 
+    public function mount()
+    {
+        $this->title = "WÖÖL | Kontakt";
+        $this->metaDescription = "vÖta meiega ühendust";
+    }
+
     public function render()
     {
-        return view('livewire.contact-form');
+        return view('livewire.contact-form')
+        ->layout('layouts.storefront', [
+            'title' => $this->title,
+            'metaDescription' => $this->metaDescription
+        ]);
     }
 }

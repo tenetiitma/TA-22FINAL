@@ -4,8 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WÖÖL</title>
-    <meta name="description" content="Saaremaiselt mÖnus käsitöökaup.">
+    <meta name="description" content="{{ $metaDescription ?? 'Saaremaiselt mÖnus käsitöö' }}">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'GA_TRACKING_ID');
+    </script>
+    <title>{{ $title ?? 'WÖÖL' }}</title>
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="{{ mix('css/custom.css') }}" rel="stylesheet">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
